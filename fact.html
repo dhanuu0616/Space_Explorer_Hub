@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Facts</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+/* ⭐ BODY BACKGROUND */
+
+body{
+margin:0;
+color:white;
+min-height:100vh;
+background:url("fact.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* ⭐ OVERLAY (FIXED PROPERLY) */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+z-index:0;
+}
+
+/* ⭐ ALL CONTENT ABOVE OVERLAY */
+
+body > *{
+position:relative;
+z-index:1;
+}
+
+/* ⭐ NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:rgba(0,0,0,0.5);
+}
+
+nav h2{
+font-family:Orbitron;
+color:#6ab4ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+}
+
+nav ul li a:hover{
+color:#6ab4ff;
+}
+
+/* ⭐ TITLE */
+
+.title{
+text-align:center;
+margin-top:40px;
+}
+
+.title h1{
+font-size:50px;
+font-family:Orbitron;
+color:white;
+text-shadow:0 0 10px #000, 0 0 20px #000;
+}
+
+/* ⭐ FACT CARDS */
+
+.facts{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+padding:40px;
+}
+
+.fact-card{
+width:230px;
+margin:15px;
+padding:20px;
+border-radius:15px;
+background:rgba(0,0,0,0.55);
+border:1px solid rgba(255,255,255,0.2);
+text-align:center;
+transition:0.4s;
+backdrop-filter:blur(10px);
+}
+
+.fact-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px #6ab4ff;
+}
+
+.fact-card h3{
+font-family:Orbitron;
+color:#6ab4ff;
+margin-bottom:10px;
+}
+
+.fact-card p{
+font-size:14px;
+color:#ddd;
+}
+
+/* ⭐ BACK BUTTON */
+
+p a{
+color:#6ab4ff;
+margin-left:20px;
+text-decoration:none;
+}
+
+p a:hover{
+text-decoration:underline;
+}
+
+/* ⭐ FOOTER */
+
+footer{
+text-align:center;
+padding:10px;
+background:rgba(0,0,0,0.6);
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TITLE -->
+
+<div class="title">
+<h1>Amazing Space Facts</h1>
+🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠🌠
+</div>
+
+<!-- FACT CARDS -->
+
+<section class="facts">
+
+<div class="fact-card">
+<h3>🌞 Sun</h3>
+<p>The Sun contains about 99.8% of the Solar System mass.</p>
+</div>
+
+<div class="fact-card">
+<h3>🌍 Earth</h3>
+<p>Earth is the only planet known to support life.</p>
+</div>
+
+<div class="fact-card">
+<h3>🪐 Saturn</h3>
+<p>Saturn could float in water because it is very light.</p>
+</div>
+
+<div class="fact-card">
+<h3>🔥 Venus</h3>
+<p>Venus is the hottest planet in the Solar System.</p>
+</div>
+
+<div class="fact-card">
+<h3>🌋 Mars</h3>
+<p>Mars has the tallest volcano called Olympus Mons.</p>
+</div>
+
+<div class="fact-card">
+<h3>🌌 Galaxy</h3>
+<p>The Milky Way contains more than 100 billion stars.</p>
+</div>
+
+</section>
+
+<p>
+<a href="index.html">⬅ Back to Home</a>
+</p>
+
+<footer>
+<p>© 2026 Space Explorer Hub 🚀</p>
+</footer>
+
+</body>
+</html>

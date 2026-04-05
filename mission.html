@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Space Missions | Student Project</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* Basic Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+/* Body & Stars */
+body {
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    /*Dark Image*/
+    background:url("bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* NAVBAR */
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:rgba(0,0,0,0.4);
+}
+
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+}
+
+nav ul li a:hover{
+color:#6ab4ff;
+}
+
+/* HERO */
+
+.hero{
+height:30vh;
+display:flex;
+flex-direction:column;
+justify-content:flex-start;
+align-items:center;
+text-align:center;
+padding-top:15px;
+}
+
+.hero h1{
+font-size:55px;
+font-family:Orbitron;
+background:linear-gradient(90deg,#6ab4ff,#a855f7);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+max-width:700px;
+margin-top:10px;
+font-size:18px;
+}
+
+/* MISSION CARDS */
+.missions{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:50px;
+padding:0 10%;
+}
+
+.mission-card{
+width:260px;
+margin:20px;
+border-radius:15px;
+background:rgba(206, 193, 193, 0.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.4s;
+padding:15px;
+}
+
+.mission-card:hover{
+transform:translateY(-10px) scale(1.05);
+box-shadow:0 0 25px #081d34;
+}
+
+.mission-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.mission-card h3{
+margin-top:10px;
+color:#7cc2ff;
+font-family:Orbitron;
+}
+
+.mission-card p{
+color:#faf8f8;
+font-size:15px;
+margin-top:10px;
+}
+
+/* Click open */
+summary{
+cursor:pointer;
+list-style:none;
+}
+
+/* FOOTER */
+footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:rgba(0,0,0,0.5);
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+<!-- HERO -->
+ <br>
+<section class="hero">
+<h1>Famous Space Missions</h1>
+<p>Explore some of the most important space missions in history.</p>
+</section>
+
+<!-- MISSIONS -->
+<section class="missions">
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="apollo.jpg">
+<h3>Apollo 11 (1969)</h3>
+</summary>
+<p>Lanched on:July 16, 1969.<br>First humans on the Moon. Astronauts Neil Armstrong and Buzz Aldrin landed in 1969.
+    
+</p>
+</details>
+</div>
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="mars.jpg">
+<h3>Mars Rover Perseverance (2020)</h3>
+</summary>
+<p>Lanched on:July 30, 2020.<br>Exploring Mars for signs of past life and collecting samples.</p>
+</details>
+</div>
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="hubble.jpg">
+<h3>Hubble Space Telescope (1990)</h3>
+</summary>
+<p>Lanched on:April 24, 1990.<br>Famous telescope that captured deep space images and galaxies.</p>
+</details>
+</div>
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="voyager.jpg">
+<h3>Voyager 1 & 2 (1977)</h3>
+</summary>
+<p>Lanched on:1-September 5, 1977.<br>
+2-August 20, 1977.<br>Explored outer planets and now traveling in interstellar space.</p>
+</details>
+</div>
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="webb.jpg">
+<h3>James Webb Telescope (2021)</h3>
+</summary>
+<p>Lanched on:December 25, 2021.<br>Powerful telescope studying the early universe and distant galaxies.</p>
+</details>
+</div>
+
+<div class="mission-card">
+<details>
+<summary>
+<img src="chandrayaan.jpg">
+<h3>Chandrayaan-3 (2023)</h3>
+</summary>
+<p>Lanched on: July 14, 2023.<br>
+    India successfully landed near the Moon’s south pole.</p>
+</details>
+</div>
+
+</section>
+
+<p>
+<a href="index.html">⬅ Back to Home</a>
+</p>
+
+
+<!-- FOOTER -->
+<footer>
+<p>&copy; 2026 Space Explorer Hub 🚀</p>
+</footer>
+
+</body>
+</html>
